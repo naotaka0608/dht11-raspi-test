@@ -26,8 +26,8 @@ def ExecuteSensor():
         result = module.read()
         if result.is_valid():
             print(datetime.now().strftime("%Y/%m/%d %H:%M:%S"))
-            print("??: " + str(result.temperature) + "?")
-            print("??: " + str(result.humidity) + "%")
+            print("温度: " + str(result.temperature) + "度")
+            print("湿度: " + str(result.humidity) + "%")
             
             date = datetime.now().strftime("%Y/%m/%d %H:%M:%S")
             #date = '2023-04-10T00:00:00.000+00:00'
